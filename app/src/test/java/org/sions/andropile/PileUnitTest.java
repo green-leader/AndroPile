@@ -33,4 +33,14 @@ public class PileUnitTest {
         assertEquals(pile.list(), new ArrayList<String>());
     }
 
+    @Test
+    public void pile_get_Choice() {
+        Pile pile = new Pile();
+
+        assertEquals(pile.getChoice(), "");
+
+        pile.add("Alpha");
+        assertEquals("Alpha", pile.getChoice());
+    }
+
 }
